@@ -48,7 +48,7 @@ FROM ubuntu:22.04 AS final
 ENV TZ=Asia/Shanghai
 ENV DEBIAN_FRONTEND=noninteractive
 
-LABEL maintainer="Cedric Ahlers <service.clowa@gmail.com>"
+LABEL maintainer="John Sun"
 
 # Upgrade packages and cleanup unused dependencies 
 RUN apt-get update -qq && \ 
