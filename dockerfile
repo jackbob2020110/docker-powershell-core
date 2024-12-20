@@ -13,7 +13,7 @@ ARG PWSH_VERSION
 ARG TARGETOS
 ARG TARGETARCH
 
-ENV TZ=Europe/Berlin
+ENV TZ=Asia/Shanghai
 ENV DEBIAN_FRONTEND=noninteractive
 
 # What's going on here?
@@ -45,7 +45,7 @@ RUN mkdir -p ${POWERSHELL_INSTALL_FOLDER} && \
 ###########
 FROM ubuntu:22.04 AS final
 
-ENV TZ=Europe/Berlin
+ENV TZ=Asia/Shanghai
 ENV DEBIAN_FRONTEND=noninteractive
 
 LABEL maintainer="Cedric Ahlers <service.clowa@gmail.com>"
